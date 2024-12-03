@@ -1,0 +1,1094 @@
+[
+    {
+        "id": "929787489002bcaa",
+        "type": "tab",
+        "label": "Water Irrigation",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "59fab51d2d9a030a",
+        "type": "ui-chart",
+        "z": "929787489002bcaa",
+        "group": "67dfd198860de40a",
+        "name": "All",
+        "label": "",
+        "order": 1,
+        "chartType": "line",
+        "category": "line",
+        "categoryType": "property",
+        "xAxisLabel": "",
+        "xAxisProperty": "x",
+        "xAxisPropertyType": "property",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "y",
+        "yAxisPropertyType": "property",
+        "ymin": "0",
+        "ymax": "",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": "2",
+        "showLegend": true,
+        "removeOlder": "2",
+        "removeOlderUnit": "604800",
+        "removeOlderPoints": "",
+        "colors": [
+            "#bf8bb2",
+            "#83a3cc",
+            "#253e5a",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": "9",
+        "height": "6",
+        "className": "",
+        "x": 1050,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d7299ada38058de0",
+        "type": "ui-text",
+        "z": "929787489002bcaa",
+        "group": "b59d4be3d732d781",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "PH Sensor :          ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": true,
+        "font": "Times New Roman,Times,serif",
+        "fontSize": "20",
+        "color": "#0c1c4d",
+        "className": "",
+        "x": 1510,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "bf4c83410a535365",
+        "type": "ui-text",
+        "z": "929787489002bcaa",
+        "group": "b59d4be3d732d781",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "TDS Sensor :          ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": true,
+        "font": "Times New Roman,Times,serif",
+        "fontSize": "20",
+        "color": "#0c1c4d",
+        "className": "",
+        "x": 1520,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "68af562863b3d91e",
+        "type": "ui-text",
+        "z": "929787489002bcaa",
+        "group": "b59d4be3d732d781",
+        "order": 5,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Water Sensor :          ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": true,
+        "font": "Times New Roman,Times,serif",
+        "fontSize": "20",
+        "color": "#0c1c4d",
+        "className": "",
+        "x": 1520,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "23e845bb9c82be4c",
+        "type": "ui-text",
+        "z": "929787489002bcaa",
+        "group": "b59d4be3d732d781",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "PH Equation :          ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": true,
+        "font": "Times New Roman,Times,serif",
+        "fontSize": "20",
+        "color": "#0c1c4d",
+        "className": "",
+        "x": 1540,
+        "y": 1080,
+        "wires": []
+    },
+    {
+        "id": "27b26db610535185",
+        "type": "ui-text",
+        "z": "929787489002bcaa",
+        "group": "b59d4be3d732d781",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "TDS Equation :          ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": true,
+        "font": "Times New Roman,Times,serif",
+        "fontSize": "20",
+        "color": "#0c1c4d",
+        "className": "",
+        "x": 1540,
+        "y": 1140,
+        "wires": []
+    },
+    {
+        "id": "607a2e8a1a05e284",
+        "type": "ui-text",
+        "z": "929787489002bcaa",
+        "group": "b59d4be3d732d781",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Water Equation :          ",
+        "format": "{{msg.payload}}",
+        "layout": "row-left",
+        "style": true,
+        "font": "Times New Roman,Times,serif",
+        "fontSize": "20",
+        "color": "#0c1c4d",
+        "className": "",
+        "x": 1550,
+        "y": 1200,
+        "wires": []
+    },
+    {
+        "id": "2cd045642f2f9112",
+        "type": "ui-chart",
+        "z": "929787489002bcaa",
+        "group": "924832f4dc22591a",
+        "name": "s1",
+        "label": "",
+        "order": 1,
+        "chartType": "line",
+        "category": "line",
+        "categoryType": "property",
+        "xAxisLabel": "",
+        "xAxisProperty": "x",
+        "xAxisPropertyType": "property",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "y",
+        "yAxisPropertyType": "property",
+        "ymin": "0",
+        "ymax": "",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": "2",
+        "showLegend": true,
+        "removeOlder": "2",
+        "removeOlderUnit": "604800",
+        "removeOlderPoints": "",
+        "colors": [
+            "#bf8bb2",
+            "#83a3cc",
+            "#253e5a",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": "4",
+        "height": "4",
+        "className": "",
+        "x": 1050,
+        "y": 580,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "e8eb67a5c92eed06",
+        "type": "ui-chart",
+        "z": "929787489002bcaa",
+        "group": "924832f4dc22591a",
+        "name": "s2",
+        "label": "",
+        "order": 2,
+        "chartType": "line",
+        "category": "line",
+        "categoryType": "property",
+        "xAxisLabel": "",
+        "xAxisProperty": "x",
+        "xAxisPropertyType": "property",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "y",
+        "yAxisPropertyType": "property",
+        "ymin": "0",
+        "ymax": "",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": "2",
+        "showLegend": true,
+        "removeOlder": "2",
+        "removeOlderUnit": "604800",
+        "removeOlderPoints": "",
+        "colors": [
+            "#83a3cc",
+            "#83a3cc",
+            "#253e5a",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": "4",
+        "height": "4",
+        "className": "",
+        "x": 1050,
+        "y": 620,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d46f50d560956c78",
+        "type": "ui-chart",
+        "z": "929787489002bcaa",
+        "group": "924832f4dc22591a",
+        "name": "s3",
+        "label": "",
+        "order": 3,
+        "chartType": "line",
+        "category": "line",
+        "categoryType": "property",
+        "xAxisLabel": "",
+        "xAxisProperty": "x",
+        "xAxisPropertyType": "property",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "y",
+        "yAxisPropertyType": "property",
+        "ymin": "0",
+        "ymax": "",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": "2",
+        "showLegend": true,
+        "removeOlder": "2",
+        "removeOlderUnit": "604800",
+        "removeOlderPoints": "",
+        "colors": [
+            "#253e5a",
+            "#83a3cc",
+            "#253e5a",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": "4",
+        "height": "4",
+        "className": "",
+        "x": 1050,
+        "y": 660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2e211c8bdf17026a",
+        "type": "function",
+        "z": "929787489002bcaa",
+        "name": "parser",
+        "func": "\n\nvar millis = msg.payload.millis;\nvar ph = msg.payload.ph;\nvar tds = msg.payload.tds;  \nvar water = msg.payload.water;         \nflow.set(\"ph\", ph);\nflow.set(\"tds\", tds);\nflow.set(\"water\", water);\nlet now = new Date();\nvar timestamp = Date.now();\nnow = now.getFullYear() + \"-\" +\n        (\"0\" + (now.getMonth() + 1)).slice(-2) + \"-\" +\n        (\"0\" + now.getDate()).slice(-2) + \" \" +\n        (\"0\" + now.getHours()).slice(-2) + \":\" +\n        (\"0\" + now.getMinutes()).slice(-2) + \":\" +\n        (\"0\" + now.getSeconds()).slice(-2);\n\n// if clear status \n// node.send([msg1, msg2]);\nreturn [\n    {\n        payload: { line: \"ph\", x: timestamp, y: ph }\n    },\n    {\n        payload: { line: \"tds\", x: timestamp, y: tds }\n    },\n    {\n        payload: { line: \"water\", x:timestamp,y:water}\n    },\n    {\n\n        payload: `${timestamp},${millis},${now},${ph},${tds},${water}\\n`\n    },\n    {\n        payload: {\"millis\":millis, \"ph\":ph,\"tds\":tds,\"water\":water}\n    }\n];",
+        "outputs": 5,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "// Code added here will be run once\nflow.set(\"ph\",0);\nflow.set(\"tds\", 0);\nflow.set(\"water\", 0);",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 680,
+        "wires": [
+            [
+                "59fab51d2d9a030a",
+                "2cd045642f2f9112",
+                "9f4a267399a8b183"
+            ],
+            [
+                "59fab51d2d9a030a",
+                "e8eb67a5c92eed06",
+                "f60a9ac69dbcbd01"
+            ],
+            [
+                "59fab51d2d9a030a",
+                "d46f50d560956c78",
+                "7016b8436053f3fd"
+            ],
+            [
+                "61c0763caf9394aa"
+            ],
+            [
+                "52a61b4943c560c7"
+            ]
+        ]
+    },
+    {
+        "id": "9f4a267399a8b183",
+        "type": "change",
+        "z": "929787489002bcaa",
+        "name": "ph changer",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.y",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1250,
+        "y": 860,
+        "wires": [
+            [
+                "d7299ada38058de0"
+            ]
+        ]
+    },
+    {
+        "id": "f60a9ac69dbcbd01",
+        "type": "change",
+        "z": "929787489002bcaa",
+        "name": "tds changer",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.y",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1250,
+        "y": 900,
+        "wires": [
+            [
+                "bf4c83410a535365"
+            ]
+        ]
+    },
+    {
+        "id": "7016b8436053f3fd",
+        "type": "change",
+        "z": "929787489002bcaa",
+        "name": "water changer",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.y",
+                "tot": "msg",
+                "dc": true
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1260,
+        "y": 940,
+        "wires": [
+            [
+                "68af562863b3d91e"
+            ]
+        ]
+    },
+    {
+        "id": "e1d11c522ae2b02f",
+        "type": "regression",
+        "z": "929787489002bcaa",
+        "name": "PH fitting",
+        "dataSetSize": "0",
+        "regressionType": "polynomial",
+        "polynomialOrder": 2,
+        "precision": "3",
+        "xInputField": "payload.seconds",
+        "xInputFieldType": "msg",
+        "yInputField": "payload.ph",
+        "yInputFieldType": "msg",
+        "yOutputField": "y",
+        "yOutputFieldType": "msg",
+        "functionOutputField": "output",
+        "functionOutputFieldType": "msg",
+        "resultOnly": false,
+        "x": 1100,
+        "y": 1080,
+        "wires": [
+            [
+                "d540303794eef010"
+            ]
+        ]
+    },
+    {
+        "id": "52a61b4943c560c7",
+        "type": "function",
+        "z": "929787489002bcaa",
+        "name": "ms to s",
+        "func": "msg.payload.seconds = msg.payload.millis/1000;\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 840,
+        "y": 1120,
+        "wires": [
+            [
+                "e1d11c522ae2b02f",
+                "a560fb7c65d1d51c",
+                "8c4c0f84dc377204"
+            ]
+        ]
+    },
+    {
+        "id": "a560fb7c65d1d51c",
+        "type": "regression",
+        "z": "929787489002bcaa",
+        "name": "TDS fitting",
+        "dataSetSize": "0",
+        "regressionType": "polynomial",
+        "polynomialOrder": 2,
+        "precision": "3",
+        "xInputField": "payload.seconds",
+        "xInputFieldType": "msg",
+        "yInputField": "payload.tds",
+        "yInputFieldType": "msg",
+        "yOutputField": "y",
+        "yOutputFieldType": "msg",
+        "functionOutputField": "output",
+        "functionOutputFieldType": "msg",
+        "resultOnly": false,
+        "x": 1110,
+        "y": 1140,
+        "wires": [
+            [
+                "2878fd1bcce5c36c"
+            ]
+        ]
+    },
+    {
+        "id": "8c4c0f84dc377204",
+        "type": "regression",
+        "z": "929787489002bcaa",
+        "name": "Water fitting",
+        "dataSetSize": "0",
+        "regressionType": "polynomial",
+        "polynomialOrder": 2,
+        "precision": "3",
+        "xInputField": "payload.seconds",
+        "xInputFieldType": "msg",
+        "yInputField": "payload.water",
+        "yInputFieldType": "msg",
+        "yOutputField": "y",
+        "yOutputFieldType": "msg",
+        "functionOutputField": "output",
+        "functionOutputFieldType": "msg",
+        "resultOnly": false,
+        "x": 1110,
+        "y": 1200,
+        "wires": [
+            [
+                "7d532e303126ad5b"
+            ]
+        ]
+    },
+    {
+        "id": "d540303794eef010",
+        "type": "change",
+        "z": "929787489002bcaa",
+        "name": "Equation changer",
+        "rules": [
+            {
+                "t": "set",
+                "p": "eq",
+                "pt": "msg",
+                "to": "output.string",
+                "tot": "msg",
+                "dc": true
+            },
+            {
+                "t": "delete",
+                "p": "payload",
+                "pt": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "eq",
+                "tot": "msg",
+                "dc": true
+            },
+            {
+                "t": "delete",
+                "p": "eq",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "output",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "y",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1290,
+        "y": 1080,
+        "wires": [
+            [
+                "23e845bb9c82be4c"
+            ]
+        ]
+    },
+    {
+        "id": "2878fd1bcce5c36c",
+        "type": "change",
+        "z": "929787489002bcaa",
+        "name": "Equation changer",
+        "rules": [
+            {
+                "t": "set",
+                "p": "eq",
+                "pt": "msg",
+                "to": "output.string",
+                "tot": "msg",
+                "dc": true
+            },
+            {
+                "t": "delete",
+                "p": "payload",
+                "pt": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "eq",
+                "tot": "msg",
+                "dc": true
+            },
+            {
+                "t": "delete",
+                "p": "eq",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "output",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "y",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1290,
+        "y": 1140,
+        "wires": [
+            [
+                "27b26db610535185"
+            ]
+        ]
+    },
+    {
+        "id": "7d532e303126ad5b",
+        "type": "change",
+        "z": "929787489002bcaa",
+        "name": "Equation changer",
+        "rules": [
+            {
+                "t": "set",
+                "p": "eq",
+                "pt": "msg",
+                "to": "output.string",
+                "tot": "msg",
+                "dc": true
+            },
+            {
+                "t": "delete",
+                "p": "payload",
+                "pt": "msg"
+            },
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "eq",
+                "tot": "msg",
+                "dc": true
+            },
+            {
+                "t": "delete",
+                "p": "eq",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "output",
+                "pt": "msg"
+            },
+            {
+                "t": "delete",
+                "p": "y",
+                "pt": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1290,
+        "y": 1200,
+        "wires": [
+            [
+                "607a2e8a1a05e284"
+            ]
+        ]
+    },
+    {
+        "id": "df51d9db8f066566",
+        "type": "ui-button",
+        "z": "929787489002bcaa",
+        "group": "1e5cac852f0cf678",
+        "name": "Clear",
+        "label": "Clear",
+        "order": 1,
+        "width": "0",
+        "height": "0",
+        "emulateClick": false,
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "iconPosition": "left",
+        "payload": "true",
+        "payloadType": "bool",
+        "topic": "topic",
+        "topicType": "msg",
+        "buttonColor": "#E1CBD7",
+        "textColor": "#0C1C4D",
+        "iconColor": "",
+        "enableClick": true,
+        "enablePointerdown": false,
+        "pointerdownPayload": "",
+        "pointerdownPayloadType": "str",
+        "enablePointerup": false,
+        "pointerupPayload": "",
+        "pointerupPayloadType": "str",
+        "x": 510,
+        "y": 760,
+        "wires": [
+            [
+                "db600d1a1cf0af79"
+            ]
+        ]
+    },
+    {
+        "id": "db600d1a1cf0af79",
+        "type": "function",
+        "z": "929787489002bcaa",
+        "name": "clear",
+        "func": "if (msg.payload == true)\n{\n    return [\n        {\"payload\":[]},\n        \n        {\n            \"payload\":`timestamp,millis,now,PH,TDS,water\\n`\n        }\n    ]\n}\n",
+        "outputs": 2,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 760,
+        "wires": [
+            [
+                "59fab51d2d9a030a",
+                "2cd045642f2f9112",
+                "e8eb67a5c92eed06",
+                "d46f50d560956c78",
+                "e1d11c522ae2b02f",
+                "a560fb7c65d1d51c",
+                "8c4c0f84dc377204",
+                "d7299ada38058de0",
+                "bf4c83410a535365",
+                "68af562863b3d91e",
+                "23e845bb9c82be4c",
+                "27b26db610535185",
+                "607a2e8a1a05e284"
+            ],
+            [
+                "ac6c5a5e495d6ae2"
+            ]
+        ]
+    },
+    {
+        "id": "3d8255f2b4d3ec9c",
+        "type": "function",
+        "z": "929787489002bcaa",
+        "name": "Parameters",
+        "func": "\nreturn null;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "flow.set(\"DataFilePath\", \"D:\\\\Work\\\\STEM\\\\2024\\\\haneen\\\\haneen'sTeam.csv\");\n\nflow.set(\"PHHigh\", 20);\nflow.set(\"PHThreshold\", 50);\n\nflow.set(\"TDSHigh\", 20);\nflow.set(\"TDSThreshold\", 50);\n\nflow.set(\"WaterHigh\", 20);\nflow.set(\"WaterThreshold\", 50);",
+        "finalize": "",
+        "libs": [],
+        "x": 590,
+        "y": 940,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "61c0763caf9394aa",
+        "type": "file",
+        "z": "929787489002bcaa",
+        "name": "",
+        "filename": "$flowContext(\"DataFilePath\")",
+        "filenameType": "jsonata",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "false",
+        "encoding": "none",
+        "x": 1060,
+        "y": 700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ac6c5a5e495d6ae2",
+        "type": "file",
+        "z": "929787489002bcaa",
+        "name": "",
+        "filename": "$flowContext(\"DataFilePath\")",
+        "filenameType": "jsonata",
+        "appendNewline": false,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 1060,
+        "y": 760,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "98bda7881c105e2b",
+        "type": "http in",
+        "z": "929787489002bcaa",
+        "name": "",
+        "url": "/colors",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 250,
+        "y": 560,
+        "wires": [
+            [
+                "0e5f581928dc746c"
+            ]
+        ]
+    },
+    {
+        "id": "6e74a29d21321369",
+        "type": "http response",
+        "z": "929787489002bcaa",
+        "name": "",
+        "statusCode": "200",
+        "headers": {},
+        "x": 680,
+        "y": 580,
+        "wires": []
+    },
+    {
+        "id": "0e5f581928dc746c",
+        "type": "function",
+        "z": "929787489002bcaa",
+        "name": "function 3",
+        "func": "let ph = flow.get(\"ph\");\nlet tds = flow.get(\"tds\");\nlet water = flow.get(\"water\");\nlet PHHigh = flow.get(\"PHHigh\");\nlet PHThreshold = flow.get(\"PHThreshold\");\nlet TDSHigh = flow.get(\"TDSHigh\");\nlet TDSThreshold = flow.get(\"TDSThreshold\");\nlet WaterHigh = flow.get(\"WaterHigh\");\nlet WaterThreshold = flow.get(\"WaterThreshold\");\n\nmsg.payload = \"\";\nif (ph > PHThreshold)\n{\n    msg.payload+= \"red,\"\n}\nelse if (ph > PHHigh)\n{\n    msg.payload += \"yellow,\"\n}\nelse \n{\n    msg.payload += \"green,\"\n}\nif (tds > TDSThreshold) {\n    msg.payload += \"red,\"\n}\nelse if (tds > TDSHigh) {\n    msg.payload += \"yellow,\"\n}\nelse {\n    msg.payload += \"green,\"\n}\nif (water > WaterThreshold) {\n    msg.payload += \"red\"\n}\nelse if (water > WaterHigh) {\n    msg.payload += \"yellow\"\n}\nelse {\n    msg.payload += \"green\"\n}\nreturn msg;",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 460,
+        "y": 560,
+        "wires": [
+            [
+                "6e74a29d21321369"
+            ]
+        ]
+    },
+    {
+        "id": "c18e2ca1993507b9",
+        "type": "http in",
+        "z": "929787489002bcaa",
+        "name": "",
+        "url": "/values",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 470,
+        "y": 620,
+        "wires": [
+            [
+                "6e74a29d21321369",
+                "2e211c8bdf17026a"
+            ]
+        ]
+    },
+    {
+        "id": "67dfd198860de40a",
+        "type": "ui-group",
+        "z": "929787489002bcaa",
+        "name": "Main Chart",
+        "page": "54f9c4f8fbe9faba",
+        "width": "9",
+        "height": "1",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": false,
+        "groupType": "default"
+    },
+    {
+        "id": "b59d4be3d732d781",
+        "type": "ui-group",
+        "z": "929787489002bcaa",
+        "name": "Values & Equations",
+        "page": "54f9c4f8fbe9faba",
+        "width": "3",
+        "height": "1",
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": false,
+        "groupType": "default"
+    },
+    {
+        "id": "924832f4dc22591a",
+        "type": "ui-group",
+        "z": "929787489002bcaa",
+        "name": "Sub Charts",
+        "page": "54f9c4f8fbe9faba",
+        "width": "12",
+        "height": "1",
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": false,
+        "groupType": "default"
+    },
+    {
+        "id": "1e5cac852f0cf678",
+        "type": "ui-group",
+        "z": "929787489002bcaa",
+        "name": "clear",
+        "page": "54f9c4f8fbe9faba",
+        "width": "4",
+        "height": "1",
+        "order": 4,
+        "showTitle": false,
+        "className": "",
+        "visible": "true",
+        "disabled": false,
+        "groupType": "default"
+    },
+    {
+        "id": "54f9c4f8fbe9faba",
+        "type": "ui-page",
+        "z": "929787489002bcaa",
+        "name": "Water Irrigation",
+        "ui": "dd2a6b0c4dd66563",
+        "path": "/irrigation",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "5e19fa31a133b0d8",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "dd2a6b0c4dd66563",
+        "type": "ui-base",
+        "name": "base",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "showPageTitle": true,
+        "navigationStyle": "none",
+        "titleBarStyle": "default"
+    },
+    {
+        "id": "5e19fa31a133b0d8",
+        "type": "ui-theme",
+        "name": "Irrigation",
+        "colors": {
+            "surface": "#0e1f2f",
+            "primary": "#ffffff",
+            "bgPage": "#ffffff",
+            "groupBg": "#ffffff",
+            "groupOutline": "#0e1f2f"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    }
+]
